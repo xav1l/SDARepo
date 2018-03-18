@@ -30,7 +30,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(solution1(1041));
+        System.out.println(solution(1041));
     }
 
     public static int solution1(int n) {        //z neta
