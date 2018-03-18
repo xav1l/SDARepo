@@ -2,7 +2,7 @@ package binarygap;
 
 public class Solution {
 
-    public static int solution(int N) {
+    private static int solution(int N) {  //zrobione na zajęciach przez prowadzącego
         int check = 0;
         int current = 0;
         boolean q = false;
@@ -30,22 +30,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(solution(1041));
+        System.out.println(solution(51712));
     }
 
-    public static int solution1(int n) {        //z neta
-        int maxGap = 0;
-        int priorIndex1 = 0;
-
-        while (n != 0) {
-            int index1 = Integer.numberOfTrailingZeros(n);
-            int zeroGap = index1 - priorIndex1 - 1;
-            if (zeroGap > maxGap) {
-                maxGap = zeroGap;
-            }
-            priorIndex1 = index1;
-            n &= n - 1; // Remove the lowest bit;
-        }
-        return maxGap;
-    }
 }
